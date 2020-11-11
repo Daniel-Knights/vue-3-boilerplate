@@ -1,0 +1,40 @@
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+$black: #2c3e50;
+$white: #fafff9;
+$primary: #83e482;
+$secondary: #eeeb33;
+
+// Breakpoints
+$bp-xl: 1200px;
+$bp-lg: 992px;
+$bp-md: 768px;
+$bp-sm: 576px;
+$bp-xs: 461px;
+
+:root {
+    --font-primary: Avenir, Helvetica, Arial, sans-serif;
+
+    --black: #2c3e50;
+    --black-rgb: #{hexToRGB(#2c3e50)};
+    --white: #fafff9;
+    --white-rgb: #{hexToRGB(#fafff9)};
+    --primary: #83e482;
+    --primary-rgb: #{hexToRGB(#83e482)};
+    --secondary: #eeeb33;
+    --secondary-rgb: #{hexToRGB(#eeeb33)};
+}
+
+// Dark mode
+[data-mode='dark'] {
+    --black: #fafff9;
+    --white: #2c3e50;
+    --black-rgb: #{hexToRGB(#fafff9)};
+    --white-rgb: #{hexToRGB(#2c3e50)};
+    --primary: #2c3e50;
+    --primary-rgb: #{hexToRGB(#2c3e50)};
+    --secondary: #2c3e50;
+    --secondary-rgb: #{hexToRGB(#2c3e50)};
+}

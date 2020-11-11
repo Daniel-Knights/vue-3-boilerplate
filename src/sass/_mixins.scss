@@ -1,0 +1,27 @@
+@mixin flex-x($justify, $align: false) {
+    display: flex;
+    @if $justify {
+        justify-content: #{$justify};
+    }
+    @if $align {
+        align-items: #{$align};
+    }
+}
+
+@mixin flex-y($justify, $align: false) {
+    display: flex;
+    @if $justify {
+        justify-content: #{$justify};
+    }
+    @if $align {
+        align-items: #{$align};
+    }
+    flex-direction: column;
+}
+
+@mixin flex-responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

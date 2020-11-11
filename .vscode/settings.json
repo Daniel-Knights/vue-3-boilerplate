@@ -1,0 +1,10 @@
+{
+    "vetur.validation.template": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/public/css"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 60px;
+    max-width: 1000px;
+    min-height: 100vh;
+}
+
+.reverse-selection::selection {
+    color: var(--black);
+    background-color: var(--white);
+}
